@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeftIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
-import ShopEase from '../assets/Images/ShopEase.png'
+import Gmart from '../assets/Images/Gmart.png'
 import { sendPasswordResetEmail } from "firebase/auth";
 import { auth } from "../firebase";
 const ForgotPassword = () => {
@@ -34,7 +34,7 @@ const ForgotPassword = () => {
         <Link to="/" className="flex items-center justify-center">
           {/* Replace with your logo */}
           <div className="h-20 w-20 rounded-full bg-indigo-300 flex items-center justify-center text-white font-bold text-xl">
-            <img src={ShopEase} alt="logo" />
+            <img src={Gmart} alt="logo" />
           </div>
         </Link>
         <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
