@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ChartBarIcon, ShoppingBagIcon, UserGroupIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router';
 
 const AdminDashboard = () => {
   const stats = [
@@ -140,18 +141,18 @@ const AdminDashboard = () => {
                 <p className="mt-1 text-sm text-gray-500">Manage your store efficiently</p>
               </div>
               <div className="p-6 space-y-4">
-                <a
-                  href="/admin/add-product"
+                <Link
+                  to="/admin/add-product"
                   className="block w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-md text-center transition-colors"
                 >
                   Add New Product
-                </a>
-                <a
-                  href="/admin/products"
+                </Link>
+                <Link 
+                  to="/admin/products"
                   className="block w-full bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-2 px-4 rounded-md text-center transition-colors"
                 >
                   View All Products
-                </a>
+                </Link>
                 <a
                   href="#"
                   className="block w-full bg-white border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-2 px-4 rounded-md text-center transition-colors"
